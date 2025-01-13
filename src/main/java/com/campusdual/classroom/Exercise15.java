@@ -1,15 +1,24 @@
 package com.campusdual.classroom;
 
-import java.util.Calendar;
+import java.util.Date;
 
 public class Exercise15 {
 
 	public static void main(String[] args) {
-		FreshMerchandise fm = new FreshMerchandise("Manzanas", "001-9", "Frutería de ayer S.L.", 8, "C", "114D", 53,
-				Calendar.getInstance().getTime());
-		fm.printSpecificData();
-		System.out.println(fm.getLocation());
+        FreshMerchandise freshItem = new FreshMerchandise(
+                "Manzanas",
+                "12345",
+                "resp123",
+                1,
+                "A",
+                "B2",
+                50,
+                new Date(1683194400000L)
+        );
 
-	}
+        freshItem.printSpecificData();
+    }
 
 }
+
+

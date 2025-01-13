@@ -1,7 +1,10 @@
 package com.campusdual.classroom;
 
+import java.util.Date;
+
 public abstract class Merchandise {
 
+	protected Date expirationDate;
 	protected String name;
 	protected String uniqueId;
 	protected String responsibleId;
@@ -17,7 +20,7 @@ public abstract class Merchandise {
 	}
 
 	public Merchandise(String name, String uniqueId, String responsibleId, int zone, String area, String shelf,
-			int quantity) {
+			int quantity,Date expirationDate) {
 		this.name = name;
 		this.uniqueId = uniqueId;
 		this.responsibleId = responsibleId;
@@ -25,6 +28,7 @@ public abstract class Merchandise {
 		this.area = area;
 		this.shelf = shelf;
 		this.quantity = quantity;
+		this.expirationDate = expirationDate;
 	}
 
 	public String getLocation() {
