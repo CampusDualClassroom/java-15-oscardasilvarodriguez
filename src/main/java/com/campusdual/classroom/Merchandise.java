@@ -1,7 +1,10 @@
 package com.campusdual.classroom;
 
+import java.util.Date;
+
 public abstract class Merchandise {
 
+	protected Date expirationDate;
 	protected String name;
 	protected String uniqueId;
 	protected String responsibleId;
@@ -25,6 +28,7 @@ public abstract class Merchandise {
 		this.area = area;
 		this.shelf = shelf;
 		this.quantity = quantity;
+//		this.expirationDate = expirationDate;
 	}
 
 	public String getLocation() {
@@ -41,7 +45,7 @@ public abstract class Merchandise {
 	public abstract Object getSpecificData();
 
 	public String getName() {
-		return name;
+		return this.name;
 	}
 
 	public void setName(String name) {
@@ -49,7 +53,7 @@ public abstract class Merchandise {
 	}
 
 	public String getUniqueId() {
-		return uniqueId;
+		return this.uniqueId;
 	}
 
 	public void setUniqueId(String uniqueId) {
@@ -57,7 +61,7 @@ public abstract class Merchandise {
 	}
 
 	public String getResponsibleId() {
-		return responsibleId;
+		return this.responsibleId;
 	}
 
 	public void setResponsibleId(String responsibleId) {
@@ -65,7 +69,7 @@ public abstract class Merchandise {
 	}
 
 	public int getZone() {
-		return zone;
+		return this.zone;
 	}
 
 	public void setZone(int zone) {
@@ -73,7 +77,7 @@ public abstract class Merchandise {
 	}
 
 	public String getArea() {
-		return area;
+		return this.area;
 	}
 
 	public void setArea(String area) {
@@ -81,7 +85,7 @@ public abstract class Merchandise {
 	}
 
 	public String getShelf() {
-		return shelf;
+		return this.shelf;
 	}
 
 	public void setShelf(String shelf) {
@@ -89,7 +93,7 @@ public abstract class Merchandise {
 	}
 
 	public int getQuantity() {
-		return quantity;
+		return this.quantity;
 	}
 
 	public void setQuantity(int quantity) {
