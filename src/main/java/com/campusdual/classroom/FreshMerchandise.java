@@ -9,8 +9,9 @@ public class FreshMerchandise extends Merchandise {
 
     private SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
 
-    public FreshMerchandise(String name, String uniqueId, String responsibleId, int zone, String area, String shelf, int quantity, Date expirationDate) {
-        super(name, uniqueId, responsibleId, zone, area, shelf, quantity, expirationDate);
+    public FreshMerchandise(String name, String uniqueId, String responsibleId, int zone, String area, String shelf, int quantity, Date expirationDate ) {
+        super(name, uniqueId, responsibleId, zone, area, shelf, quantity);
+        this.expirationDate = expirationDate;
     }
 
     public Date getExpirationDate() {
